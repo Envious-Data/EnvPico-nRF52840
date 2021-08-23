@@ -5470,7 +5470,7 @@
     (property "Value" "32MHz 12pF" (id 1) (at 163.83 203.2 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" (id 2) (at 160.02 200.66 0)
+    (property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" (id 2) (at 160.02 200.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 160.02 200.66 0)
@@ -6002,7 +6002,7 @@
       (reference "U3") (unit 1) (value "nRF52840") (footprint "Package_DFN_QFN:Nordic_AQFN-73-1EP_7x7mm_P0.5mm")
     )
     (path "/00000000-0000-0000-0000-00006116f722"
-      (reference "Y1") (unit 1) (value "32MHz 12pF") (footprint "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm")
+      (reference "Y1") (unit 1) (value "32MHz 12pF") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")
     )
     (path "/00000000-0000-0000-0000-00005edb7d8d"
       (reference "e1") (unit 1) (value "TYPE-C-31-M-12") (footprint "HRO-TYPE-C31-M-12:HRO-TYPE-C-31-M-12")

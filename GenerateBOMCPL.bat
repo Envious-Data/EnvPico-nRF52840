@@ -1,2 +1,2 @@
-jlc-kicad-tools -n EnvOpenPico . -o .\_output\ --include-all-component-groups
+jlc-kicad-tools -n EnvPico-nRF52840 . -o .\_output\ --include-all-component-groups
 pause
