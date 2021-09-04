@@ -242,12 +242,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR09
 U 1 1 5F077314
-P 9250 1750
-F 0 "#PWR09" H 9250 1600 50  0001 C CNN
-F 1 "+3V3" H 9265 1923 50  0000 C CNN
-F 2 "" H 9250 1750 50  0001 C CNN
-F 3 "" H 9250 1750 50  0001 C CNN
-	1    9250 1750
+P 9250 1700
+F 0 "#PWR09" H 9250 1550 50  0001 C CNN
+F 1 "+3V3" H 9265 1873 50  0000 C CNN
+F 2 "" H 9250 1700 50  0001 C CNN
+F 3 "" H 9250 1700 50  0001 C CNN
+	1    9250 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -372,8 +372,6 @@ F 3 "" H 6950 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 1750 9250 1850
-Wire Wire Line
 	6750 2250 6950 2250
 $Comp
 L Device:C_Small C12
@@ -430,7 +428,7 @@ Wire Wire Line
 Text Notes 1850 1450 0    20   ~ 0
 D1 NEEDS to be 0omh resistor or schotky resistor
 Connection ~ 6750 1850
-Text GLabel 2100 1700 1    47   Input ~ 0
+Text GLabel 2100 1650 1    47   Input ~ 0
 VBUS
 Wire Wire Line
 	6450 1850 6750 1850
@@ -492,8 +490,6 @@ F 3 "~" H 8550 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 1850 8300 1850
-Wire Wire Line
 	8800 1850 8850 1850
 Connection ~ 8950 1850
 Wire Wire Line
@@ -514,8 +510,6 @@ F 3 "" H 6750 1600 50  0001 C CNN
 	1    6750 1600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1750 1750 2100 1750
 $Comp
 L Battery_Management:BQ24072RGT U2
 U 1 1 61305AC1
@@ -553,9 +547,6 @@ Wire Wire Line
 	3900 1250 4050 1250
 Wire Wire Line
 	4050 1250 4050 1100
-Wire Wire Line
-	4050 1350 4050 1250
-Connection ~ 4050 1250
 $Comp
 L power:GND #PWR0116
 U 1 1 613F90EB
@@ -731,11 +722,6 @@ F 3 "" H 3550 2700 50  0001 C CNN
 	1    3550 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 1750 2100 1700
-Connection ~ 2100 1750
-Wire Wire Line
-	2100 1750 2300 1750
 Text GLabel 2600 1750 2    50   Input ~ 0
 VSYS
 Text GLabel 4050 1100 1    50   Input ~ 0
@@ -807,10 +793,7 @@ F 3 "~" H 8300 9700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8100 9600 8300 9600
-Wire Wire Line
 	8300 9600 8600 9600
-Connection ~ 8300 9600
 Text GLabel 8600 9600 2    50   Input ~ 0
 VSS_PA
 Text GLabel 14600 5750 0    50   Input ~ 0
@@ -998,18 +981,16 @@ Text Notes 5850 4950 0    39   ~ 0
 $Comp
 L power:+3V3 #PWR0127
 U 1 1 611DDC6C
-P 13200 7000
-F 0 "#PWR0127" H 13200 6850 50  0001 C CNN
-F 1 "+3V3" H 13215 7173 50  0000 C CNN
-F 2 "" H 13200 7000 50  0001 C CNN
-F 3 "" H 13200 7000 50  0001 C CNN
-	1    13200 7000
+P 13150 7000
+F 0 "#PWR0127" H 13150 6850 50  0001 C CNN
+F 1 "+3V3" H 13165 7173 50  0000 C CNN
+F 2 "" H 13150 7000 50  0001 C CNN
+F 3 "" H 13150 7000 50  0001 C CNN
+	1    13150 7000
 	0    -1   -1   0   
 $EndComp
 Text GLabel 13450 7000 2    50   Input ~ 0
 3.3VO
-Wire Wire Line
-	13450 7000 13200 7000
 Text GLabel 14600 5150 0    50   Input ~ 0
 3.3VO
 Wire Wire Line
@@ -1025,4 +1006,31 @@ F 3 "http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.nrf52/dita/nrf
 	1    8000 6800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4050 1350 4050 1250
+Connection ~ 4050 1250
+Wire Wire Line
+	8250 1850 8300 1850
+Wire Wire Line
+	1750 1750 2100 1750
+Wire Wire Line
+	2100 1650 2100 1750
+Connection ~ 2100 1750
+Wire Wire Line
+	2100 1750 2300 1750
+NoConn ~ 1100 2000
+NoConn ~ 1100 1400
+Wire Wire Line
+	8100 9600 8100 9650
+Wire Wire Line
+	8200 9650 8200 9600
+Wire Wire Line
+	8200 9600 8300 9600
+Wire Wire Line
+	8100 9650 8200 9650
+Connection ~ 8300 9600
+Wire Wire Line
+	13150 7000 13450 7000
+Wire Wire Line
+	9250 1700 9250 1850
 $EndSCHEMATC
