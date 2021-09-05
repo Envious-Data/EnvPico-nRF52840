@@ -5360,8 +5360,8 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061233dc7)
     (property "Reference" "D4" (id 0) (at 62.23 38.9382 0))
-    (property "Value" "Schottky 0603" (id 1) (at 62.23 41.2496 0))
-    (property "Footprint" "Diode_SMD:D_0603_1608Metric" (id 2) (at 62.23 44.45 0)
+    (property "Value" "1N4002W" (id 1) (at 62.23 41.2496 0))
+    (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 62.23 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 62.23 44.45 0)
@@ -5947,7 +5947,7 @@
       (reference "D2") (unit 1) (value "0402 led") (footprint "LED_SMD:LED_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-000061233dc7"
-      (reference "D4") (unit 1) (value "Schottky 0603") (footprint "Diode_SMD:D_0603_1608Metric")
+      (reference "D4") (unit 1) (value "1N4002W") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/00000000-0000-0000-0000-0000611692b8"
       (reference "J3") (unit 1) (value "2.54mm header 01x20") (footprint "2.54mmheadercastelation:PinHeader_1x20_P2.54mm_Vertical_castelated")
