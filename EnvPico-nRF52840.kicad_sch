@@ -5588,7 +5588,7 @@
   (symbol (lib_id "Type-C:HRO-TYPE-C-31-M-12") (at 25.4 44.45 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005edb7d8d)
-    (property "Reference" "e1" (id 0) (at 19.05 34.29 0)
+    (property "Reference" "USB1" (id 0) (at 19.05 34.29 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "TYPE-C-31-M-12" (id 1) (at 31.75 64.77 0)
@@ -6003,11 +6003,11 @@
     (path "/00000000-0000-0000-0000-00006117511a"
       (reference "U3") (unit 1) (value "nRF52840") (footprint "Package_DFN_QFN:Nordic_AQFN-73-1EP_7x7mm_P0.5mm")
     )
+    (path "/00000000-0000-0000-0000-00005edb7d8d"
+      (reference "USB1") (unit 1) (value "TYPE-C-31-M-12") (footprint "HRO-TYPE-C31-M-12:HRO-TYPE-C-31-M-12")
+    )
     (path "/00000000-0000-0000-0000-00006116f722"
       (reference "Y1") (unit 1) (value "32MHz 12pF") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")
-    )
-    (path "/00000000-0000-0000-0000-00005edb7d8d"
-      (reference "e1") (unit 1) (value "TYPE-C-31-M-12") (footprint "HRO-TYPE-C31-M-12:HRO-TYPE-C-31-M-12")
     )
   )
 )
