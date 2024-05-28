@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP nRF52840-QFAA-F-R7
+D RF System on a Chip - SoC Multiprotocol Bluetooth 5.3 SoC supporting Bluetooth Low Energy, Bluetooth mesh, NFC, Thread and Zigbee
+K
+F https://infocenter.nordicsemi.com/pdf/nRF52840_PS_v1.7.pdf
+$ENDCMP
+#
+#End Doc Library
